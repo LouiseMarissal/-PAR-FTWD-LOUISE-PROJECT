@@ -3,23 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: 20px;
   font-family: "Work Sans", sans-serif;
-  color: #333;
+  color: black;
   font-weight: 300;
   text-align: center;
-  /* background-image: url(/images/fly-harry.gif); */
+  background-image: url(/images/quizpage/wallpaper-homepage.jpg);
   background-size: cover;
 }
 h1 {
   font-weight: 300;
   margin: 0px;
-  padding: 10px;
+  padding: 50px;
   font-size: 20px;
-  background-color: #444;
-  color: #fff;
+  /* background-color: #444; */
+  color: black;
 }
+
 .question {
   font-size: 30px;
   margin-bottom: 10px;
@@ -65,4 +67,24 @@ button:hover {
   position: relative;
   height: 200px;
   margin-top: 40px;
+  /* color: white; */
+  /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+@font-face {
+  font-family: "Harry Potter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Harry Potter Regular"),
+    url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
+}
+.btn-container {
+  padding-top: 150px;
+}
+
+.bounce {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  /* animation-iteration-count */
+  color: white;
 }

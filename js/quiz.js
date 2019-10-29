@@ -2,14 +2,15 @@
 (function() {
   const myQuestions = [
     {
-      question: "Who was the Potters' secret keeper before they died? ",
+      question: "Who was the Potters' secret keeper<br> before they died? ",
       answers: {
         a: "Peter Petigrew",
         b: "Sirius Black",
         c: "Albus Dumbledore",
         d: "Remus Lupin"
       },
-      correctAnswer: "a"
+      correctAnswer: "b",
+      level: "hard"
     },
     {
       question: "Who is Kreacher?",
@@ -19,40 +20,44 @@
         c: "Harry's Owl",
         d: "Dudley's dog"
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      level: "medium"
     },
     {
       question:
-        "Whom does the Death Eater Bellatrix Lestrange, the most loyal maid of the Dark Master, be the cousin?",
+        "Whom does the Death Eater Bellatrix Lestrange,<br> the most loyal maid of the Dark Master, <br>be the cousin?",
       answers: {
         a: "Neville LongBottom",
         b: "Sirius Black",
         c: "Draco Malfoy",
         d: "Severus Snape"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "easy"
     },
     {
       question:
-        "What are the last words of Severus Snape in The Deathly Hallows?",
+        "What are the last words of Severus Snape <br>in The Deathly Hallows?",
       answers: {
         a: "Not Harry! Please..",
         b: "Look.. at me",
         c: "You could do better..",
         d: "Avada Kedavra"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "hard"
     },
     {
       question:
-        "At Ollivander, Harry Potter will find his first wand. Or rather, the wand will choose it. What is it?",
+        "At Ollivander, Harry Potter will find his first wand.<br> Or rather, the wand will choose it.<br> What is it?",
       answers: {
         a: "Willow wood and unicorn hair",
         b: "In vine wood and dragon ventricle",
         c: "In elderwood and hair of oval",
         d: "In holly wood and phoenix feather"
       },
-      correctAnswer: "d"
+      correctAnswer: "d",
+      level: "medium"
     },
     {
       question: "Who were Harry Parents?",
@@ -62,29 +67,32 @@
         c: "Athur and Molly Potter",
         d: "Robert and Maggie"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "easy"
     },
     {
       question:
-        "Who are the muggle aunt and unclethat Harry must live with every summer?",
+        "Who are the muggle aunt and uncle that <br>Harry must live with every summer?",
       answers: {
         a: "Ned and Camilia Diddly",
         b: "Vernon and Petunia Dursley",
         c: "Ralph and Magnolia Dudley",
         d: "Peter and Mary Durdlay"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "easy"
     },
     {
       question:
-        "Albus Dumbledore claims to have a scar above his left knee. What does it look like ?",
+        "Albus Dumbledore claims to have a scar above his left knee. <br> What does it look like ?",
       answers: {
         a: "This is the spitting portrait of the Mona Lisa",
         b: "It's a perfect plan of the London underground",
         c: "Merlin's Portrait",
         d: "The portrait of GrindenWald"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "medium"
     },
     {
       question: "In order of birth, who are the seven weasley siblings?",
@@ -94,80 +102,88 @@
         c: "Fred, George, Ginny, Ron, Bill, Charlie, Percy",
         d: "Bill, Charlie, Percy, George, Fred, Ron, Ginny"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "hard"
     },
     {
-      question: "What are the three Unforgivable Curses ?",
+      question: "What are the three Unforgivable Curse ?",
       answers: {
         a: "Impedimenta, Incarcerous and Incendio",
         b: "Avada Kedavra, Crucio and Imperio",
         c: "Expelliarmus, Expecto Patronum and Lumos",
         d: "Wingardium Leviosa, Diffindo and Reducto"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "medium"
     },
     {
-      question: "Which of these Hogwarts Teachers teaches Transfiguration?",
+      question: "Which of these Hogwarts Teachers<br> teaches Transfiguration?",
       answers: {
         a: "Professor McGonagall",
         b: "Professor Binns",
         c: "Professor Snape",
         d: "Professor Hagrid"
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      level: "medium"
     },
     {
       question:
-        "At the end of 'Harry Potter and the Philosopher's Stone', which professor removes his turban to reveal Lord Voldemort on the back of his head ?",
+        "At the end of 'Harry Potter and the Philosopher's Stone',<br>which professor removes his turban to reveal <br>Lord Voldemort on the back of his head ?",
       answers: {
         a: "Professor Lockhart",
         b: "Professor Quirrell",
         c: "Professor Sprout",
         d: "Professor Trelawney"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "easy"
     },
     {
-      question: "Who first shows the diary of Tom Riddle ?",
+      question: "Who first shows the diary <br>of Tom Riddle ?",
       answers: {
         a: "Moaning Myrtle",
         b: "Ginny Weasley",
         c: "Nearly Headless Nick",
         d: "Hermione Granger"
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      level: "medium"
     },
     {
-      question: "Who was Tom Marvolo Riddle ",
+      question: "Who was Tom Marvolo Riddle ? ",
       answers: {
         a: "The ghost of Sirius Black",
         b: "Harry's best friend",
         c: "Lord Voldemort",
         d: "Death Eaters' enemy"
       },
-      correctAnswer: "c"
+      correctAnswer: "c",
+      level: "easy"
     },
     {
       question:
-        "What's the only book ine the Harry Potter serie that doesn't feature Lord Voldemort ?",
+        "What's the only book ine the Harry Potter serie <br>that doesn't feature Lord Voldemort ?",
       answers: {
         a: "The Prisoner of Azkaban",
         b: "The Deathly Hallows",
         c: "The Goblet of Fire",
         d: "The Half Blood Prince"
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      level: "medium"
     },
     {
       question:
-        "Which Hogwarts student is killed in Little Hangelton graveyard at the end of 'The Goblet of Fire' ?",
+        "Which Hogwarts student is killed in Little Hangelton graveyard <br>at the end of 'The Goblet of Fire' ?",
       answers: {
         a: "Draco Malfoy",
         b: "Cedric Diggory",
         c: "Ronald Weasley",
         d: "Deans Thomas"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "medium"
     },
     {
       question: "In wich House is Luna Lovegood?",
@@ -177,7 +193,8 @@
         c: "Ravenclaw",
         d: "Gryffindor"
       },
-      correctAnswer: "c"
+      correctAnswer: "c",
+      level: "easy"
     },
     {
       question: "When is Harry's birthday?",
@@ -187,29 +204,32 @@
         c: "25 January",
         d: "New Year's Day"
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      level: "medium"
     },
     {
       question:
-        "In the Chamber of Secrets book, Mrs Weasley magically fixes Harry’s broken glasses. Who repairs them in Diagon Alley in the film?",
+        "In the Chamber of Secrets book, <br>Mrs Weasley magically fixes Harry’s broken glasses. <br>Who repairs them in Diagon Alley in the film?",
       answers: {
         a: "Lockhart",
         b: "Hermione",
         c: "Ron",
         d: "Neville"
       },
-      correctAnswer: "b"
+      correctAnswer: "b",
+      level: "medium"
     },
     {
       question:
-        "What's the name of the fairy-talebook that Dumbledore bequeaths to Hermione in 'The Deathly Hallows'?",
+        "What's the name of the fairy-talebook that Dumbledore <br>bequeaths to Hermione in 'The Deathly Hallows'?",
       answers: {
         a: "The Tales of Beedle the Bard",
         b: "The Tales of Crookshanks the cat",
         c: "The Tales of Gilderoy the Great",
         d: "The Tales of The Wonderfull Voldy"
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      level: "hard"
     }
   ];
   function buildQuiz() {
@@ -229,8 +249,12 @@
 
       output.push(
         `<div class="slide">
-             <div class="question"> ${currentQuestion.question} </div>
-             <div class="answers"> ${answers.join("")} </div>
+             <div class="question" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:35px"> ${
+               currentQuestion.question
+             } </div>
+             <div class="answers" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:20px"> ${answers.join(
+               ""
+             )} </div>
            </div>`
       );
     });
@@ -257,13 +281,6 @@
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
-
-        // color the answers green
-        answerContainers[questionNumber].style.color = "lightgreen";
-      } else {
-        // if answer is wrong or blank
-        // color the answers red
-        answerContainers[questionNumber].style.color = "red";
       }
     });
 
@@ -299,15 +316,15 @@
     showSlide(currentSlide - 1);
   }
 
-  const quizContainer = document.getElementById("quiz");
-  const resultsContainer = document.getElementById("results");
-  const submitButton = document.getElementById("submit");
+  const quizContainer = document.querySelector("#quiz");
+  const resultsContainer = document.querySelector("#results");
+  const submitButton = document.querySelector("#submit");
 
   // display quiz right away
   buildQuiz();
 
-  const previousButton = document.getElementById("previous");
-  const nextButton = document.getElementById("next");
+  const previousButton = document.querySelector("#previous");
+  const nextButton = document.querySelector("#next");
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
 

@@ -6,18 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script type="module" src="/js/quiz.js"></script>
     <link rel="stylesheet" href="/css/styles-quiz.css" />
-    <title>PotterHead or Stupid Muggle?</title>
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <title>Potterhead or Stupid Muggle?</title>
   </head>
 
   <body>
-    <div id="title"><h1>PotterHead or Stupid Muggle ?</h1></div>
-    <div class="quiz-container">
-      <div id="quiz"></div>
+    <div id="title">
+      <h1
+        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px"
+      >
+        PotterHead or Stupid Muggle ?
+      </h1>
     </div>
-    <button id="previous">Previous Question</button>
-    <button id="next">Next Question</button>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
+    <div class="quiz-container">
+      <div class="bg-container">
+        <div id="quiz"></div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button id="previous">Previous Question</button>
+      <button id="next">Next Question</button>
+      <button id="submit">Submit Quiz</button>
+      <div
+        id="results"
+        class="bounce"
+        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px"
+      ></div>
+    </div>
     <embed
       src="/songs/the-dueling-club.mp3"
       autostart="true"
