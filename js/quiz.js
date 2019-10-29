@@ -9,7 +9,7 @@
         c: "Albus Dumbledore",
         d: "Remus Lupin"
       },
-      correctAnswer: "b"
+      correctAnswer: "a"
     },
     {
       question: "Who is Kreacher?",
@@ -97,7 +97,7 @@
       correctAnswer: "b"
     },
     {
-      question: "What are the three Unforgivable Curse ?",
+      question: "What are the three Unforgivable Curses ?",
       answers: {
         a: "Impedimenta, Incarcerous and Incendio",
         b: "Avada Kedavra, Crucio and Imperio",
@@ -118,7 +118,7 @@
     },
     {
       question:
-        "At the end of 'Harry Potter and the Philosopher's Stone', whoch professor removes his turban to reveal Lord Voldemort on the back of his head ?",
+        "At the end of 'Harry Potter and the Philosopher's Stone', which professor removes his turban to reveal Lord Voldemort on the back of his head ?",
       answers: {
         a: "Professor Lockhart",
         b: "Professor Quirrell",
@@ -213,7 +213,6 @@
     }
   ];
   function buildQuiz() {
-    
     const output = [];
     var letter = [];
     myQuestions.forEach((currentQuestion, questionNumber) => {
