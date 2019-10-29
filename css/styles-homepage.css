@@ -11,17 +11,21 @@
     url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
 }
 body {
-  /* background-image: url(/images/voldy.gif); */
+  background-image: url(/images/homepage/wallpaper-homepage-1.jpg);
   background-size: cover;
-}
-.homepage-title {
-  text-align: center;
-  padding: 0;
 }
 
 #heading {
   padding-top: 100px;
   text-align: center;
+  color: darkolivegreen;
+}
+.bg-heading {
+  background-color: white;
+  opacity: 0.8;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: inline-block;
 }
 #button {
   text-align: center;
