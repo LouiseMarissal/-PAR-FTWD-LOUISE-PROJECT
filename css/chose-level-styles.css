@@ -12,9 +12,10 @@
 }
 
 body {
-  background-image: url(/images/level-page/choose-level.jpg);
+  /* background-image: url(/images/level-page/choose-level.jpg); */
   /* background-size: cover; */
-  color: whitesmoke;
+  background-color: chocolate;
+  color: rgba(30, 97, 147, 0.9);
   opacity: 0;
   transition-delay: 0.5s;
 }
@@ -35,7 +36,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(250, 250, 250);
+  color: rgba(30, 97, 147, 0.9);
 }
 #heading {
   padding-top: 70px;
@@ -44,8 +45,11 @@ a {
 h1 {
   padding-top: 10px;
 }
+.intro {
+  padding-top: 30px;
+}
 #several-levels {
-  padding-top: 130px;
+  padding-top: 110px;
   display: flex;
   justify-content: center;
 }

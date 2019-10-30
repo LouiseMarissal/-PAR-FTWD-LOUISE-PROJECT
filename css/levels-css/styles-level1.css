@@ -17,7 +17,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(250, 197, 33);
+  color: rgb(1, 15, 20);
 }
 
 body {
@@ -26,10 +26,10 @@ body {
   /* color: black; */
   font-weight: 300;
   text-align: center;
-  /* background-image: url(/images/levels/hufflepuff-level.jpg); */
+  /* background-image: url(/images/); */
   background-size: cover;
-  color: rgb(242, 197, 51);
-  background-color: rgba(95, 93, 88);
+  color: rgb(1, 15, 20);
+  background-color: rgb(242, 197, 51);
 }
 .title {
   padding-top: 100px;
