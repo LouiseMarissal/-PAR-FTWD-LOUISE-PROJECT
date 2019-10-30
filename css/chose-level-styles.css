@@ -18,15 +18,34 @@ body {
   opacity: 0;
   transition-delay: 0.5s;
 }
+nav {
+  /* background-color: rgba(250, 250, 250, 0.3); */
+  /* padding: 5px; */
+  /* height: 90px; */
+}
+ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
 #heading {
-  padding-top: 100px;
+  padding-top: 70px;
   text-align: center;
 }
 h1 {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #several-levels {
-  padding-top: 150px;
+  padding-top: 130px;
   display: flex;
   justify-content: center;
 }
@@ -67,12 +86,27 @@ button {
   color: white;
 }
 .three {
-  background-color: rgba(74, 207, 132, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   border: none;
-  color: black;
+  color: white;
 }
 .four {
   background-color: rgba(196, 17, 17, 0.4);
   border: none;
   color: rgb(250, 197, 33);
+}
+
+.pulse {
+  animation: infinite;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  padding-top: 20px;
+  z-index: 3;
+}
+.tada {
+  /* animation: infinite; */
+  animation-duration: 3s;
+  animation-delay: 0s;
+  padding-top: 20px;
+  z-index: 3;
 }

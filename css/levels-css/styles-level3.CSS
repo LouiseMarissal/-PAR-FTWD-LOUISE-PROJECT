@@ -8,12 +8,24 @@
 body {
   font-size: 20px;
   font-family: "Work Sans", sans-serif;
-  color: white;
+  color: rgb(250, 250, 250);
   font-weight: 300;
   text-align: center;
-  /* background-image: url(/images/levels/slytherin-level.jpg); */
+  background-image: url(/images/levels/hardlevel.jpg);
   background-size: cover;
-  background-color: rgb(21, 131, 69);
+  /* background-color: black; */
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
 }
 h1 {
   font-weight: 300;
@@ -85,10 +97,14 @@ button:hover {
 }
 
 .bounce {
+  animation: infinite;
   animation-duration: 3s;
   animation-delay: 2s;
   /* animation-iteration-count */
   color: white;
 }
-button {
+.fadeIn {
+  animation-duration: 3.5s;
+  animation-delay: 0.5s;
+  /* animation: infinite; */
 }

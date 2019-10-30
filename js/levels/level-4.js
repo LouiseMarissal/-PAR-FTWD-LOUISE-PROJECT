@@ -287,7 +287,7 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `Your result is <br>${numCorrect} out of ${myQuestions.length}`;
   }
 
   function showSlide(n) {

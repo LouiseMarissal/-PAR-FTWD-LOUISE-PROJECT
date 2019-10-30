@@ -15,6 +15,42 @@
     },
     {
       question:
+        "Who is the Sister of the Death Eater,<br> Bellatrix Lestrange?",
+      answers: {
+        a: "Sybill Trelawney",
+        b: "Narcissa Malfoy",
+        c: "Nymphadora Tonks",
+        d: "Poppy Pomfrey"
+      },
+      correctAnswer: "b",
+      level: "hard"
+    },
+    {
+      question:
+        "What potion does Remus Lupine need to appease his transformation? ",
+      answers: {
+        a: "Wolfsbane Potion",
+        b: "Polyjuice Potion",
+        c: "Love Potion",
+        d: "Draught of Living Death"
+      },
+      correctAnswer: "a",
+      level: "hard"
+    },
+    {
+      question:
+        "In the 'Order of the Phoenix' who ordonned to the Dementors to Attacked Harry and Dudley?",
+      answers: {
+        a: "Cornelius Fudge",
+        b: "Dolores Umbridge",
+        c: "Mafalda Hopkirk",
+        d: "Lucius Malfoy"
+      },
+      correctAnswer: "a",
+      level: "hard"
+    },
+    {
+      question:
         "What are the last words of Severus Snape <br>in The Deathly Hallows?",
       answers: {
         a: "Not Harry! Please..",
@@ -138,7 +174,7 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `Your result is <br>${numCorrect} out of ${myQuestions.length}`;
   }
 
   function showSlide(n) {

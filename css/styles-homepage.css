@@ -4,6 +4,18 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(250, 197, 33);
+}
 @font-face {
   font-family: "Harry Potter Regular";
   font-style: normal;
@@ -19,7 +31,7 @@ body {
 }
 
 #heading {
-  padding-top: 100px;
+  padding-top: 60px;
   text-align: center;
   color: rgb(250, 197, 33);
 }
@@ -27,7 +39,7 @@ body {
   /* background-color: white; */
   /* opacity: 0.8; */
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 10px 40px;
   display: inline-block;
 }
 h1 {
@@ -53,4 +65,13 @@ button {
 }
 button:hover {
   opacity: 1;
+}
+.flipInX {
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+}
+.shake {
+  animation: infinite;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
 }

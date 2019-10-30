@@ -1,5 +1,5 @@
 // build my Quiz
-// change datas ----> 6 EASY questions
+// 10 EASY questions
 (function() {
   const myQuestions = [
     {
@@ -70,6 +70,52 @@
       },
       correctAnswer: "c",
       level: "easy"
+    },
+    {
+      question:
+        "Which Hogwart's Student says, <br>'I don't go looking for trouble,<br> trouble usually find me' ?",
+      answers: {
+        a: "Draco Malfoy",
+        b: "George Weasley",
+        c: "Harry Potter",
+        d: "Ron Weasley"
+      },
+      correctAnswer: "c",
+      level: "easy"
+    },
+    {
+      question: "Who is Rubeus Hagrid ?",
+      answers: {
+        a: "The Keeper of Key of Hogwarts",
+        b: "An House-elf",
+        c: "A Troll",
+        d: "Story of Magic's professor"
+      },
+      correctAnswer: "a",
+      level: "easy"
+    },
+    {
+      question:
+        "In 'The Azkaban Prisoner',<br> Who saved Harry from the dementors in the Hogwarts Express ?",
+      answers: {
+        a: "Regulus Black",
+        b: "Remus Lupin",
+        c: "Peter Pettigrew",
+        d: "Albus Dumbledore"
+      },
+      correctAnswer: "b",
+      level: "easy"
+    },
+    {
+      question: "Whose Draco Malfoy never separates ?",
+      answers: {
+        a: "His mommy",
+        b: "Vincent Crabbe and Gregory Goyle",
+        c: "Dobby his House-elf",
+        d: "Moaning Myrtle"
+      },
+      correctAnswer: "b",
+      level: "easy"
     }
   ];
 
@@ -126,7 +172,10 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    // change the code if the result is good or not
+    // change all the content of the page
+
+    resultsContainer.innerHTML = `Your Score is <br>${numCorrect} out of ${myQuestions.length}`;
   }
 
   function showSlide(n) {

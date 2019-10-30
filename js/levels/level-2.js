@@ -14,6 +14,41 @@
       level: "medium"
     },
     {
+      question: "What is the name of Harry's owl ?",
+      answers: {
+        a: "Errol",
+        b: "Hedwige",
+        c: "Buck",
+        d: "Owly"
+      },
+      correctAnswer: "b",
+      level: "medium"
+    },
+    {
+      question:
+        "In 'The Philosopher's Stone', <br>what is the name of Hagrid's Dragon ?",
+      answers: {
+        a: "Norbert",
+        b: "Hubert",
+        c: "Robert",
+        d: "Ruppert"
+      },
+      correctAnswer: "a",
+      level: "medium"
+    },
+    {
+      question:
+        "Which curse Ron used against the Troll<br> in 'The Philosopher's Stone' ?",
+      answers: {
+        a: "Wingardium Leviosa",
+        b: "Petrificus totalus",
+        c: "Despacito",
+        d: "Alohomora"
+      },
+      correctAnswer: "a",
+      level: "medium"
+    },
+    {
       question: "What are the three Unforgivable Curse ?",
       answers: {
         a: "Impedimenta, Incarcerous and Incendio",
@@ -137,7 +172,7 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `Your score is :<br>${numCorrect} out of ${myQuestions.length}`;
   }
 
   function showSlide(n) {

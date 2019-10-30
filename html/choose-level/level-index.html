@@ -9,59 +9,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="HandheldFriendly" content="true" />
     <link rel="stylesheet" href="/css/chose-level-styles.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <script type="module" src="/js/transitions.js"></script>
     <script type="module" src="/js/transitions.js"></script>
 
     <title>Choose your Level</title>
   </head>
   <body>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a
+            href="/html/index.html"
+            id="a-nav"
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
+            >Home</a
+          >
+        </li>
+      </ul>
+    </nav>
     <div id="heading">
       <h1
         style="font-family:'Harry Potter Regular';font-weight:normal;font-size:90px"
+        class="tada"
       >
-        Choose your House
+        Choose your level
       </h1>
     </div>
     <section id="several-levels">
       <div id="a-level">
         <ul>
-          <li>
-            <span  onclick="transitionToPage('/html/levels/index-level1.html')" class="level"
+          <li class="pulse">
+            <span
+              onclick="transitionToPage('/html/levels/index-level1.html')"
+              class="level"
               ><button
                 class="one"
                 style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
               >
-                Hufflepuff
-              </button></a
+                Squib: Easy
+              </button></span
             >
           </li>
-          <li>
-            <span   onclick="transitionToPage('/html/levels/index-level2.html')" class="level"
+          <li class="pulse">
+            <span
+              onclick="transitionToPage('/html/levels/index-level2.html')"
+              class="level"
               ><button
                 class="two"
                 style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
               >
-                Ravenclaw
-              </button></a
-            >
+                Troll: Medium<br /></button
+            ></span>
           </li>
-          <li>
-            <span   onclick="transitionToPage('/html/levels/index-level3.html')" class="level"
+          <li class="pulse">
+            <span
+              onclick="transitionToPage('/html/levels/index-level3.html')"
+              class="level"
               ><button
                 class="three"
                 style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
               >
-                Slytherin
-              </button></a
-            >
-          </li>
-          <li>
-            <span   onclick="transitionToPage('/html/levels/index-level4.html')" class="level"
-              ><button
-                class="four"
-                style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
-              >
-                Gryffindor
-              </button></a
+                Death Eaters: Hard
+              </button></span
             >
           </li>
         </ul>

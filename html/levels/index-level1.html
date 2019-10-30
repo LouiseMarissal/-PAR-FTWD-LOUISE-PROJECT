@@ -14,19 +14,47 @@
     <title>Potterhead or Stupid Muggle?</title>
   </head>
 
-  <body>
+  <body> 
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a
+            href="/html/index.html"
+            id="a-nav"
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/html/choose-level/level-index.html"
+            id="a-nav"
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
+            >Levels</a
+          >
+        </li>
+      </ul>
+    </nav>
     <div id="title">
       <h1
         style="font-family:'Harry Potter Regular';font-weight:normal;font-size:70px"
+        class="slideInLeft"
       >
-        Hufflepuff's House
+        PotterHead or Squib ?
       </h1>
       <!-- <p
         style="font-family:'Harry Potter Regular';font-weight:normal;font-size:70px"
       >
         Hufflepull's House
       </p> -->
-    </div>
+    
+    <div class="zoomInDown">
+      <div
+        id="results"
+        class="bounce"
+        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:75px"
+      ></div>
+    
     <div class="quiz-container">
       <div class="bg-container">
         <div id="quiz"></div>
@@ -51,11 +79,11 @@
       >
         Submit Quiz
       </button>
-      <div
+      <!-- <div
         id="results"
         class="bounce"
         style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px"
-      ></div>
+      ></div> -->
     </div>
     <embed
       src="/songs/the-dueling-club.mp3"

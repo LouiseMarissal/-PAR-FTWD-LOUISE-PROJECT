@@ -3,6 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
+  /* height: 600px;
+  width: 800px; */
+  z-index: 0;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(250, 197, 33);
 }
 
 body {
@@ -15,6 +30,9 @@ body {
   background-size: cover;
   color: rgb(242, 197, 51);
   background-color: rgba(95, 93, 88);
+}
+.title {
+  padding-top: 100px;
 }
 h1 {
   font-weight: 300;
@@ -84,15 +102,21 @@ button:hover {
     url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
 }
 .btn-container {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .bounce {
+  animation: infinite;
   animation-duration: 3s;
-  animation-delay: 2s;
-  /* animation-iteration-count */
+  animation-delay: 0.5s;
+  padding-top: 20px;
+  z-index: 3;
   color: white;
+  /* animation-iteration-count */
 }
-.title {
-  padding-top: 100px;
+.slideInLeft {
+  /* animation: infinite; */
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  padding-top: 20px;
 }
