@@ -153,7 +153,8 @@
   function showResults() {
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
-
+    // set automatique answer according to the user result
+    let answers = "";
     // keep track of user's answers
     let numCorrect = 0;
 
@@ -169,10 +170,19 @@
         // add to the number of correct answers
         numCorrect++;
       }
+      if (numCorrect <= 5) {
+        answers = "Stupid Muggle!";
+      }
+      if (numCorrect >= 5) {
+        answers = "Not so bad little Troll";
+      }
+      if (numCorrect >= 8) {
+        return (answers = "Good job!<br> You're a PotterHead");
+      }
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `Your score is :<br>${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `Your score is :<br>${numCorrect} out of ${myQuestions.length} <br>${answers}`;
   }
 
   function showSlide(n) {

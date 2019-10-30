@@ -116,7 +116,7 @@ button:hover {
 }
 .slideInLeft {
   /* animation: infinite; */
-  animation-duration: 3s;
-  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-delay: 0s;
   padding-top: 20px;
 }

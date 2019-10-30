@@ -4,7 +4,7 @@
   const myQuestions = [
     {
       question:
-        "Whom does the Death Eater Bellatrix Lestrange,<br> the most loyal maid of the Dark Master, <br>be the cousin?",
+        "Whom does the Deatheater Bellatrix Lestrange,<br> the most loyal maid of the Dark Master, <br>be the cousin?",
       answers: {
         a: "Neville LongBottom",
         b: "Sirius Black",
@@ -122,7 +122,6 @@
   function buildQuiz() {
     const output = [];
     var letter = [];
-    // var level = [];
     myQuestions.forEach((currentQuestion, questionNumber) => {
       const answers = [];
       for (letter in currentQuestion.answers) {
@@ -146,14 +145,13 @@
       );
     });
 
-    // finally combine our output list into one string of HTML and put it on the page
     quizContainer.innerHTML = output.join("");
   }
 
   function showResults() {
-    // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
-
+    // set automatique answer according to the user result
+    let answers = "";
     // keep track of user's answers
     let numCorrect = 0;
 
@@ -169,13 +167,18 @@
         // add to the number of correct answers
         numCorrect++;
       }
+      if (numCorrect <= 5) {
+        answers = "Stupid Muggle!";
+      }
+      if (numCorrect >= 5) {
+        answers = "Not so bad little Squib";
+      }
+      if (numCorrect >= 8) {
+        return (answers = "Good job!<br> You're a PotterHead");
+      }
     });
 
-    // show number of correct answers out of total
-    // change the code if the result is good or not
-    // change all the content of the page
-
-    resultsContainer.innerHTML = `Your Score is <br>${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `Your Score is <br>${numCorrect} out of ${myQuestions.length} <br>${answers}`;
   }
 
   function showSlide(n) {

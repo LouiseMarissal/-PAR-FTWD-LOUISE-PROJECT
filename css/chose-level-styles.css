@@ -98,14 +98,14 @@ button {
 
 .pulse {
   animation: infinite;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-delay: 0.5s;
   padding-top: 20px;
   z-index: 3;
 }
 .tada {
   /* animation: infinite; */
-  animation-duration: 3s;
+  animation-duration: 1.9s;
   animation-delay: 0s;
   padding-top: 20px;
   z-index: 3;
