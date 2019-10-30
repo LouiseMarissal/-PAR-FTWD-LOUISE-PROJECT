@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Harry Potter Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Harry Potter Regular"),
+    url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
+}
+
+body {
+  background-image: url(/images/level-page/choose-level.jpg);
+  /* background-size: cover; */
+  color: whitesmoke;
+  opacity: 0;
+  transition-delay: 0.5s;
+}
+#heading {
+  padding-top: 100px;
+  text-align: center;
+}
+h1 {
+  padding-top: 20px;
+}
+#several-levels {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.level {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  padding: 30px;
+}
+ul {
+  display: flex;
+}
+#a-level {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+button {
+  /* background-color: white; */
+  border: none;
+  /* color: rgb(250, 197, 33); */
+  padding: 25px 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.one {
+  background-color: rgba(95, 93, 88, 0.9);
+  border: none;
+  color: rgb(242, 197, 51);
+}
+.two {
+  background-color: rgba(30, 97, 147, 0.9);
+  border: none;
+  color: white;
+}
+.three {
+  background-color: rgba(74, 207, 132, 0.4);
+  border: none;
+  color: black;
+}
+.four {
+  background-color: rgba(196, 17, 17, 0.4);
+  border: none;
+  color: rgb(250, 197, 33);
+}

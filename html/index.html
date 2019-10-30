@@ -2,34 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
     <link rel="stylesheet" href="/css/styles-homepage.css" />
     <link rel="stylesheet" href="/css/animate.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/js/transitions.js"></script>
     <title>Potterhead or Stupid Muggle?</title>
   </head>
   <body>
     <div id="heading">
       <div class="bg-heading">
         <h1
-          style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px"
+          style="font-family:'Harry Potter Regular';font-weight:normal;font-size:70px"
+        >
+          <!-- Do you really know everything about Harry Potter? <br />
+          Test your knowledge with our quiz: <br /> -->
+          "Potterhead or Stupid Muggle ?"
+        </h1>
+        <p
+          style="font-family:'Harry Potter Regular';font-weight:normal;font-size:22px"
         >
           Do you really know everything about Harry Potter? <br />
           Test your knowledge with our quiz: <br />
-          "Potterhead or Stupid Muggle ?"
-        </h1>
+        </p>
       </div>
     </div>
 
     <div id="button">
-      <a href="/html/quiz-index.html">
+      <span onclick="transitionToPage('/html/choose-level/level-index.html')">
         <button
           style="font-family:'Harry Potter Regular';font-weight:normal;font-size:20px"
         >
           By The Merlin's Beard! <br />
           Let's go!
         </button>
-      </a>
+      </span>
     </div>
 
     <embed

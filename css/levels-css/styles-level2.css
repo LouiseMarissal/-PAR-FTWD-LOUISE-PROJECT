@@ -2,24 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
   font-size: 20px;
   font-family: "Work Sans", sans-serif;
-  color: black;
+  color: white;
   font-weight: 300;
   text-align: center;
-  background-image: url(/images/quizpage/wallpaper-homepage.jpg);
+  /* background-image: url(/images/levels/ravenclaw-level.jpg); */
   background-size: cover;
+  background-color: rgba(30, 97, 147, 0.9);
 }
 h1 {
   font-weight: 300;
   margin: 0px;
-  padding: 50px;
+  padding-top: 50px;
   font-size: 20px;
   /* background-color: #444; */
-  color: black;
+  /* color: black; */
 }
 
 .question {
@@ -87,4 +89,6 @@ button:hover {
   animation-delay: 2s;
   /* animation-iteration-count */
   color: white;
+}
+button {
 }

@@ -1,27 +1,5 @@
 const myQuestions = [
   {
-    question: "Who was the Potters' secret keeper<br> before they died? ",
-    answers: {
-      a: "Peter Petigrew",
-      b: "Sirius Black",
-      c: "Albus Dumbledore",
-      d: "Remus Lupin"
-    },
-    correctAnswer: "b",
-    level: "hard"
-  },
-  {
-    question: "Who is Kreacher?",
-    answers: {
-      a: "The horrible house-elf of Black's family",
-      b: "Dobby's Best friend",
-      c: "Harry's Owl",
-      d: "Dudley's dog"
-    },
-    correctAnswer: "a",
-    level: "medium"
-  },
-  {
     question:
       "Whom does the Death Eater Bellatrix Lestrange,<br> the most loyal maid of the Dark Master, <br>be the cousin?",
     answers: {
@@ -32,30 +10,6 @@ const myQuestions = [
     },
     correctAnswer: "b",
     level: "easy"
-  },
-  {
-    question:
-      "What are the last words of Severus Snape <br>in The Deathly Hallows?",
-    answers: {
-      a: "Not Harry! Please..",
-      b: "Look.. at me",
-      c: "You could do better..",
-      d: "Avada Kedavra"
-    },
-    correctAnswer: "b",
-    level: "hard"
-  },
-  {
-    question:
-      "At Ollivander, Harry Potter will find his first wand.<br> Or rather, the wand will choose it.<br> What is it?",
-    answers: {
-      a: "Willow wood and unicorn hair",
-      b: "In vine wood and dragon ventricle",
-      c: "In elderwood and hair of oval",
-      d: "In holly wood and phoenix feather"
-    },
-    correctAnswer: "d",
-    level: "medium"
   },
   {
     question: "Who were Harry Parents?",
@@ -82,26 +36,48 @@ const myQuestions = [
   },
   {
     question:
-      "Albus Dumbledore claims to have a scar above his left knee. <br> What does it look like ?",
+      "At the end of 'Harry Potter and the Philosopher's Stone',<br>which professor removes his turban to reveal <br>Lord Voldemort on the back of his head ?",
     answers: {
-      a: "This is the spitting portrait of the Mona Lisa",
-      b: "It's a perfect plan of the London underground",
-      c: "Merlin's Portrait",
-      d: "The portrait of GrindenWald"
+      a: "Professor Lockhart",
+      b: "Professor Quirrell",
+      c: "Professor Sprout",
+      d: "Professor Trelawney"
     },
     correctAnswer: "b",
-    level: "medium"
+    level: "easy"
   },
   {
-    question: "In order of birth, who are the seven weasley siblings?",
+    question: "Who was Tom Marvolo Riddle ? ",
     answers: {
-      a: "Percy, Ron, Bill, Fred, Ginny, Georges, Charlie",
-      b: "Bill, Charlie, Percy, Fred, George, Ron, Ginny",
-      c: "Fred, George, Ginny, Ron, Bill, Charlie, Percy",
-      d: "Bill, Charlie, Percy, George, Fred, Ron, Ginny"
+      a: "The ghost of Sirius Black",
+      b: "Harry's best friend",
+      c: "Lord Voldemort",
+      d: "Death Eaters' enemy"
     },
-    correctAnswer: "b",
-    level: "hard"
+    correctAnswer: "c",
+    level: "easy"
+  },
+  {
+    question: "In wich House is Luna Lovegood?",
+    answers: {
+      a: "Hufflepuff",
+      b: "Slytherin",
+      c: "Ravenclaw",
+      d: "Gryffindor"
+    },
+    correctAnswer: "c",
+    level: "easy"
+  },
+  {
+    question: "Who is Kreacher?",
+    answers: {
+      a: "The horrible house-elf of Black's family",
+      b: "Dobby's Best friend",
+      c: "Harry's Owl",
+      d: "Dudley's dog"
+    },
+    correctAnswer: "a",
+    level: "medium"
   },
   {
     question: "What are the three Unforgivable Curse ?",
@@ -127,41 +103,7 @@ const myQuestions = [
   },
   {
     question:
-      "At the end of 'Harry Potter and the Philosopher's Stone',<br>which professor removes his turban to reveal <br>Lord Voldemort on the back of his head ?",
-    answers: {
-      a: "Professor Lockhart",
-      b: "Professor Quirrell",
-      c: "Professor Sprout",
-      d: "Professor Trelawney"
-    },
-    correctAnswer: "b",
-    level: "easy"
-  },
-  {
-    question: "Who first shows the diary <br>of Tom Riddle ?",
-    answers: {
-      a: "Moaning Myrtle",
-      b: "Ginny Weasley",
-      c: "Nearly Headless Nick",
-      d: "Hermione Granger"
-    },
-    correctAnswer: "a",
-    level: "medium"
-  },
-  {
-    question: "Who was Tom Marvolo Riddle ? ",
-    answers: {
-      a: "The ghost of Sirius Black",
-      b: "Harry's best friend",
-      c: "Lord Voldemort",
-      d: "Death Eaters' enemy"
-    },
-    correctAnswer: "c",
-    level: "easy"
-  },
-  {
-    question:
-      "What's the only book ine the Harry Potter serie <br>that doesn't feature Lord Voldemort ?",
+      "What's the only book in the Harry Potter serie <br>that doesn't feature Lord Voldemort ?",
     answers: {
       a: "The Prisoner of Azkaban",
       b: "The Deathly Hallows",
@@ -182,17 +124,6 @@ const myQuestions = [
     },
     correctAnswer: "b",
     level: "medium"
-  },
-  {
-    question: "In wich House is Luna Lovegood?",
-    answers: {
-      a: "Hufflepuff",
-      b: "Slytherin",
-      c: "Ravenclaw",
-      d: "Gryffindor"
-    },
-    correctAnswer: "c",
-    level: "easy"
   },
   {
     question: "When is Harry's birthday?",
@@ -216,6 +147,75 @@ const myQuestions = [
     },
     correctAnswer: "b",
     level: "medium"
+  },
+  {
+    question: "Who was the Potters' secret keeper<br> before they died? ",
+    answers: {
+      a: "Peter Pettigrew",
+      b: "Sirius Black",
+      c: "Albus Dumbledore",
+      d: "Remus Lupin"
+    },
+    correctAnswer: "a",
+    level: "hard"
+  },
+  {
+    question:
+      "What are the last words of Severus Snape <br>in The Deathly Hallows?",
+    answers: {
+      a: "Not Harry! Please..",
+      b: "Look.. at me",
+      c: "You could do better..",
+      d: "Avada Kedavra"
+    },
+    correctAnswer: "b",
+    level: "hard"
+  },
+  {
+    question:
+      "At Ollivander, Harry Potter will find his first wand.<br> Or rather, the wand will choose it.<br> What is it?",
+    answers: {
+      a: "Willow wood and unicorn hair",
+      b: "In vine wood and dragon ventricle",
+      c: "In elderwood and hair of oval",
+      d: "In holly wood and phoenix feather"
+    },
+    correctAnswer: "d",
+    level: "hard"
+  },
+  {
+    question:
+      "Albus Dumbledore claims to have a scar above his left knee. <br> What does it look like ?",
+    answers: {
+      a: "This is the spitting portrait of the Mona Lisa",
+      b: "It's a perfect plan of the London underground",
+      c: "Merlin's Portrait",
+      d: "The portrait of GrindenWald"
+    },
+    correctAnswer: "b",
+    level: "hard"
+  },
+  {
+    question: "In order of birth, who are the seven weasley siblings?",
+    answers: {
+      a: "Percy, Ron, Bill, Fred, Ginny, Georges, Charlie",
+      b: "Bill, Charlie, Percy, Fred, George, Ron, Ginny",
+      c: "Fred, George, Ginny, Ron, Bill, Charlie, Percy",
+      d: "Bill, Charlie, Percy, George, Fred, Ron, Ginny"
+    },
+    correctAnswer: "b",
+    level: "hard"
+  },
+  {
+    question: "Who first shows the diary <br>of Tom Riddle ?",
+    answers: {
+      a: "Moaning Myrtle",
+      b: "Ginny Weasley",
+      c: "Nearly Headless Nick",
+      d: "Hermione Granger"
+    },
+    correctAnswer: "a",
+    level: "hard"
   },
   {
     question:

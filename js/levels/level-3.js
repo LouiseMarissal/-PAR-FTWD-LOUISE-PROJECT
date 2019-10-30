@@ -1,39 +1,17 @@
 // build my Quiz
+// change data HARD
 (function() {
   const myQuestions = [
     {
       question: "Who was the Potters' secret keeper<br> before they died? ",
       answers: {
-        a: "Peter Petigrew",
+        a: "Peter Pettigrew",
         b: "Sirius Black",
         c: "Albus Dumbledore",
         d: "Remus Lupin"
       },
-      correctAnswer: "b",
-      level: "hard"
-    },
-    {
-      question: "Who is Kreacher?",
-      answers: {
-        a: "The horrible house-elf of Black's family",
-        b: "Dobby's Best friend",
-        c: "Harry's Owl",
-        d: "Dudley's dog"
-      },
       correctAnswer: "a",
-      level: "medium"
-    },
-    {
-      question:
-        "Whom does the Death Eater Bellatrix Lestrange,<br> the most loyal maid of the Dark Master, <br>be the cousin?",
-      answers: {
-        a: "Neville LongBottom",
-        b: "Sirius Black",
-        c: "Draco Malfoy",
-        d: "Severus Snape"
-      },
-      correctAnswer: "b",
-      level: "easy"
+      level: "hard"
     },
     {
       question:
@@ -57,30 +35,7 @@
         d: "In holly wood and phoenix feather"
       },
       correctAnswer: "d",
-      level: "medium"
-    },
-    {
-      question: "Who were Harry Parents?",
-      answers: {
-        a: "Minerva and Craig Potter",
-        b: "James and Lily Potter",
-        c: "Athur and Molly Potter",
-        d: "Robert and Maggie"
-      },
-      correctAnswer: "b",
-      level: "easy"
-    },
-    {
-      question:
-        "Who are the muggle aunt and uncle that <br>Harry must live with every summer?",
-      answers: {
-        a: "Ned and Camilia Diddly",
-        b: "Vernon and Petunia Dursley",
-        c: "Ralph and Magnolia Dudley",
-        d: "Peter and Mary Durdlay"
-      },
-      correctAnswer: "b",
-      level: "easy"
+      level: "hard"
     },
     {
       question:
@@ -92,7 +47,7 @@
         d: "The portrait of GrindenWald"
       },
       correctAnswer: "b",
-      level: "medium"
+      level: "hard"
     },
     {
       question: "In order of birth, who are the seven weasley siblings?",
@@ -106,40 +61,6 @@
       level: "hard"
     },
     {
-      question: "What are the three Unforgivable Curse ?",
-      answers: {
-        a: "Impedimenta, Incarcerous and Incendio",
-        b: "Avada Kedavra, Crucio and Imperio",
-        c: "Expelliarmus, Expecto Patronum and Lumos",
-        d: "Wingardium Leviosa, Diffindo and Reducto"
-      },
-      correctAnswer: "b",
-      level: "medium"
-    },
-    {
-      question: "Which of these Hogwarts Teachers<br> teaches Transfiguration?",
-      answers: {
-        a: "Professor McGonagall",
-        b: "Professor Binns",
-        c: "Professor Snape",
-        d: "Professor Hagrid"
-      },
-      correctAnswer: "a",
-      level: "medium"
-    },
-    {
-      question:
-        "At the end of 'Harry Potter and the Philosopher's Stone',<br>which professor removes his turban to reveal <br>Lord Voldemort on the back of his head ?",
-      answers: {
-        a: "Professor Lockhart",
-        b: "Professor Quirrell",
-        c: "Professor Sprout",
-        d: "Professor Trelawney"
-      },
-      correctAnswer: "b",
-      level: "easy"
-    },
-    {
       question: "Who first shows the diary <br>of Tom Riddle ?",
       answers: {
         a: "Moaning Myrtle",
@@ -148,76 +69,7 @@
         d: "Hermione Granger"
       },
       correctAnswer: "a",
-      level: "medium"
-    },
-    {
-      question: "Who was Tom Marvolo Riddle ? ",
-      answers: {
-        a: "The ghost of Sirius Black",
-        b: "Harry's best friend",
-        c: "Lord Voldemort",
-        d: "Death Eaters' enemy"
-      },
-      correctAnswer: "c",
-      level: "easy"
-    },
-    {
-      question:
-        "What's the only book ine the Harry Potter serie <br>that doesn't feature Lord Voldemort ?",
-      answers: {
-        a: "The Prisoner of Azkaban",
-        b: "The Deathly Hallows",
-        c: "The Goblet of Fire",
-        d: "The Half Blood Prince"
-      },
-      correctAnswer: "a",
-      level: "medium"
-    },
-    {
-      question:
-        "Which Hogwarts student is killed in Little Hangelton graveyard <br>at the end of 'The Goblet of Fire' ?",
-      answers: {
-        a: "Draco Malfoy",
-        b: "Cedric Diggory",
-        c: "Ronald Weasley",
-        d: "Deans Thomas"
-      },
-      correctAnswer: "b",
-      level: "medium"
-    },
-    {
-      question: "In wich House is Luna Lovegood?",
-      answers: {
-        a: "Hufflepuff",
-        b: "Slytherin",
-        c: "Ravenclaw",
-        d: "Gryffindor"
-      },
-      correctAnswer: "c",
-      level: "easy"
-    },
-    {
-      question: "When is Harry's birthday?",
-      answers: {
-        a: "31 July",
-        b: "2 September",
-        c: "25 January",
-        d: "New Year's Day"
-      },
-      correctAnswer: "a",
-      level: "medium"
-    },
-    {
-      question:
-        "In the Chamber of Secrets book, <br>Mrs Weasley magically fixes Harry’s broken glasses. <br>Who repairs them in Diagon Alley in the film?",
-      answers: {
-        a: "Lockhart",
-        b: "Hermione",
-        c: "Ron",
-        d: "Neville"
-      },
-      correctAnswer: "b",
-      level: "medium"
+      level: "hard"
     },
     {
       question:
@@ -232,30 +84,31 @@
       level: "hard"
     }
   ];
+
   function buildQuiz() {
     const output = [];
     var letter = [];
+    // var level = [];
     myQuestions.forEach((currentQuestion, questionNumber) => {
       const answers = [];
       for (letter in currentQuestion.answers) {
         answers.push(
           `<label>
-               <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
-                ${currentQuestion.answers[letter]}
-             </label>`
+                 <input type="radio" name="question${questionNumber}" value="${letter}">
+                  ${letter} :
+                  ${currentQuestion.answers[letter]}
+            
+               </label>`
         );
       }
 
       output.push(
         `<div class="slide">
-             <div class="question" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:35px"> ${
-               currentQuestion.question
-             } </div>
-             <div class="answers" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:20px"> ${answers.join(
-               ""
-             )} </div>
-           </div>`
+               <div class="question" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px"> ${
+                 currentQuestion.question
+               } </div>
+               <div class="answers" > ${answers.join("")} </div>
+             </div>`
       );
     });
 

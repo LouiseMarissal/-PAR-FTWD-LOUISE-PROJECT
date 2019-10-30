@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 @font-face {
   font-family: "Harry Potter Regular";
@@ -13,6 +14,8 @@
 body {
   background-image: url(/images/homepage/wallpaper-red.jpg);
   background-size: cover;
+  opacity: 0;
+  transition-delay: 0.5s;
 }
 
 #heading {
@@ -27,12 +30,15 @@ body {
   padding: 20px 40px;
   display: inline-block;
 }
+h1 {
+  padding-bottom: 50px;
+}
 #button {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-top: 190px;
+  padding-top: 150px;
 }
 button {
   background-color: rgba(40, 59, 11, 0.9);
