@@ -107,8 +107,8 @@ button:hover {
 
 .bounce {
   animation: infinite;
-  animation-duration: 3s;
-  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-delay: 0s;
   padding-top: 20px;
   z-index: 3;
   color: white;
@@ -119,4 +119,69 @@ button:hover {
   animation-duration: 1s;
   animation-delay: 0s;
   padding-top: 20px;
+}
+.pop-up-container {
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+  /* background-color: black; ---------> a régler*/
+}
+/* div with gif background when score is weak */
+.loser {
+  /* background-color: Black; */
+  background-image: url(/images/displays-answers/easy-level/stupid-muggle.gif);
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  color: rgb(242, 197, 51);
+  z-index: 3;
+  padding-top: 0;
+}
+.active {
+  padding-top: 175px;
+}
+.loser > button {
+  background-color: rgba(242, 197, 51, 0.9);
+  color: black;
+  padding: 20px;
+  margin: 40px;
+}
+.squib {
+  background-image: url(/images/displays-answers/easy-level/rogue.gif);
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  color: rgb(242, 197, 51);
+  z-index: 3;
+  padding-top: 0;
+}
+.squib > button {
+  background-color: rgba(242, 197, 51, 0.9);
+  color: black;
+  padding: 20px;
+  margin: 40px;
+}
+.expert {
+  background-image: url(/images/displays-answers/easy-level/macgo-easy.gif);
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  color: rgb(242, 197, 51);
+  z-index: 3;
+  padding-top: 0;
+}
+.expert > button {
+  background-color: rgba(242, 197, 51, 0.9);
+  color: black;
+  padding: 20px;
+  margin: 40px;
 }

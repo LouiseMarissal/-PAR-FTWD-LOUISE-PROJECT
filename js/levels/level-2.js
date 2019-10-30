@@ -170,19 +170,22 @@
         // add to the number of correct answers
         numCorrect++;
       }
-      if (numCorrect <= 5) {
+      if (numCorrect < 5) {
+        resultsContainer.classList.add("loser");
         answers = "Stupid Muggle!";
       }
       if (numCorrect >= 5) {
+        resultsContainer.classList.add("troll");
         answers = "Not so bad little Troll";
       }
-      if (numCorrect >= 8) {
+      if (numCorrect === 8) {
+        resultsContainer.classList.add("expert");
         return (answers = "Good job!<br> You're a PotterHead");
       }
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `Your score is :<br>${numCorrect} out of ${myQuestions.length} <br>${answers}`;
+    resultsContainer.innerHTML = `<div class="active bounce" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px">Your Score is <br>${numCorrect} out of ${myQuestions.length} <br>${answers}</div> <button><a href="/html/choose-level/level-index.html">Go Back</a></button>`;
   }
 
   function showSlide(n) {
@@ -212,7 +215,18 @@
   function showPreviousSlide() {
     showSlide(currentSlide - 1);
   }
+  //set a timer
+  var sec = 60;
+  var time = setInterval(myTimer, 1000);
 
+  function myTimer() {
+    document.getElementById("timer").innerHTML = sec + "sec left";
+    sec--;
+    if (sec == -1) {
+      clearInterval(time);
+      alert("Time out! You Lose Muggle!");
+    }
+  }
   const quizContainer = document.querySelector("#quiz");
   const resultsContainer = document.querySelector("#results");
   const submitButton = document.querySelector("#submit");

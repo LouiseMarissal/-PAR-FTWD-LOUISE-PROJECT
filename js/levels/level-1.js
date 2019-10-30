@@ -55,7 +55,7 @@
         a: "The ghost of Sirius Black",
         b: "Harry's best friend",
         c: "Lord Voldemort",
-        d: "Death Eaters' enemy"
+        d: "Deatheaters' enemy"
       },
       correctAnswer: "c",
       level: "easy"
@@ -161,24 +161,26 @@
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
       }
-      if (numCorrect <= 5) {
+      if (numCorrect < 5) {
+        resultsContainer.classList.add("loser");
         answers = "Stupid Muggle!";
       }
       if (numCorrect >= 5) {
         answers = "Not so bad little Squib";
+        resultsContainer.classList.add("squib");
       }
-      if (numCorrect >= 8) {
-        return (answers = "Good job!<br> You're a PotterHead");
+      if (numCorrect === 10) {
+        answers = "Good job!<br> You're a PotterHead";
+        resultsContainer.classList.add("expert");
       }
     });
 
-    resultsContainer.innerHTML = `Your Score is <br>${numCorrect} out of ${myQuestions.length} <br>${answers}`;
+    resultsContainer.innerHTML = `<div class="active bounce" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px">Your Score is <br>${numCorrect} out of ${myQuestions.length} <br>${answers}</div> <button><a href="/html/choose-level/level-index.html">Go Back</a></button>`;
   }
 
   function showSlide(n) {
@@ -208,9 +210,21 @@
   function showPreviousSlide() {
     showSlide(currentSlide - 1);
   }
+  //set a timer
+  var sec = 60;
+  var time = setInterval(myTimer, 1000);
+
+  function myTimer() {
+    document.getElementById("timer").innerHTML = sec + "sec left";
+    sec--;
+    if (sec == -1) {
+      clearInterval(time);
+      alert("Time out! You Lose Muggle!");
+    }
+  }
 
   const quizContainer = document.querySelector("#quiz");
-  const resultsContainer = document.querySelector("#results");
+  const resultsContainer = document.querySelector("#pop-up");
   const submitButton = document.querySelector("#submit");
 
   // display quiz right away
