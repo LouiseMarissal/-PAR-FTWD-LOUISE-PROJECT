@@ -78,6 +78,7 @@ button {
   margin: 4px 2px;
   opacity: 0.9;
   transition: 0.3s;
+  cursor: pointer;
 }
 .one {
   background-color: rgba(95, 93, 88, 0.9);

@@ -32,7 +32,7 @@ body {
 }
 
 #heading {
-  padding-top: 60px;
+  padding-top: 50px;
   text-align: center;
   color: rgb(250, 197, 33);
 }
@@ -63,6 +63,7 @@ button {
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
+  cursor: pointer;
 }
 button:hover {
   opacity: 1;

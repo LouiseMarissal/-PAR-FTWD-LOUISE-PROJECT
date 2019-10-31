@@ -228,7 +228,7 @@
     }
   }
   const quizContainer = document.querySelector("#quiz");
-  const resultsContainer = document.querySelector("#results");
+  const resultsContainer = document.querySelector("#pop-up");
   const submitButton = document.querySelector("#submit");
 
   // display quiz right away

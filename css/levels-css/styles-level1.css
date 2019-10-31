@@ -9,11 +9,12 @@
 }
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px 20px;
 }
 li {
   list-style: none;
+  padding-left: 20px;
 }
 a {
   text-decoration: none;
@@ -55,7 +56,9 @@ h1 {
 .answers label {
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
 }
+
 button {
   font-family: "Work Sans", sans-serif;
   font-size: 22px;
@@ -185,3 +188,7 @@ button:hover {
   padding: 20px;
   margin: 40px;
 }
+/* 
+input[type="radio"] {
+  opacity: 0;
+} */

@@ -17,11 +17,12 @@ body {
 }
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px 20px;
 }
 li {
   list-style: none;
+  padding-left: 20px;
 }
 a {
   text-decoration: none;
@@ -48,6 +49,7 @@ h1 {
 .answers label {
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 button {
   font-family: "Work Sans", sans-serif;
@@ -107,4 +109,75 @@ button:hover {
   animation-duration: 3.5s;
   animation-delay: 0.5s;
   /* animation: infinite; */
+}
+/* .jello {
+   animation: infinite; 
+   animation-duration: 3s;
+  animation-delay: 0.5s;
+  padding-top: 20px;
+} */
+.pop-up-container {
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+}
+/* background-color: black;  */
+/* div with gif background when score is weak */
+.loser {
+  background-color: Black;
+  background-image: url(/images/displays-answers/hard-level/squid-expert.gif);
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  color: rgb(242, 197, 51);
+  z-index: 3;
+  padding-top: 0;
+}
+.active {
+  padding-top: 175px;
+}
+.loser > button {
+  background-color: rgb(33, 75, 42);
+  color: black;
+  padding: 20px;
+  margin: 40px;
+}
+.deatheater {
+  background-image: url(/images/displays-answers/hard-level/voldy-expert.gif);
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  color: rgb(242, 197, 51);
+  z-index: 3;
+  padding-top: 0;
+}
+.deatheater > button {
+  background-color: rgb(33, 75, 42);
+  color: white;
+  padding: 20px;
+  margin: 40px;
+}
+.expert {
+  background-image: url(/images/displays-answers/hard-level/funny-potter.gif);
+  background-size: cover;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  color: rgb(242, 197, 51);
+  z-index: 3;
+  padding-top: 0;
+}
+.expert > button {
+  background-color: rgb(33, 75, 42);
+  color: white;
+  padding: 20px;
+  margin: 40px;
 }
