@@ -7,6 +7,17 @@
   width: 800px; */
   z-index: 0;
 }
+body {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  /* color: black; */
+  font-weight: 300;
+  text-align: center;
+  /* background-image: url(/images/); */
+  background-size: cover;
+  color: rgb(1, 15, 20);
+  background-color: rgb(242, 197, 51);
+}
 ul {
   display: flex;
   justify-content: flex-start;
@@ -21,17 +32,6 @@ a {
   color: rgb(1, 15, 20);
 }
 
-body {
-  font-size: 20px;
-  font-family: "Work Sans", sans-serif;
-  /* color: black; */
-  font-weight: 300;
-  text-align: center;
-  /* background-image: url(/images/); */
-  background-size: cover;
-  color: rgb(1, 15, 20);
-  background-color: rgb(242, 197, 51);
-}
 .title {
   padding-top: 100px;
 }
@@ -102,7 +102,7 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   src: local("Harry Potter Regular"),
-    url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
+    url("../font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
 }
 .btn-container {
   padding-top: 100px;
@@ -132,7 +132,7 @@ button:hover {
 /* div with gif background when score is weak */
 .loser {
   /* background-color: Black; */
-  background-image: url(/images/displays-answers/easy-level/stupid-muggle.gif);
+  background-image: url(../images/displays-answers/easy-level/stupid-muggle.gif);
   background-size: cover;
   height: 600px;
   width: 600px;
@@ -153,7 +153,7 @@ button:hover {
   margin: 40px;
 }
 .squib {
-  background-image: url(/images/displays-answers/easy-level/rogue.gif);
+  background-image: url(../images/displays-answers/easy-level/rogue.gif);
   background-size: cover;
   height: 600px;
   width: 600px;
@@ -171,7 +171,7 @@ button:hover {
   margin: 40px;
 }
 .expert {
-  background-image: url(/images/displays-answers/easy-level/macgo-easy.gif);
+  background-image: url(../images/displays-answers/easy-level/macgo-easy.gif);
   background-size: cover;
   height: 600px;
   width: 600px;

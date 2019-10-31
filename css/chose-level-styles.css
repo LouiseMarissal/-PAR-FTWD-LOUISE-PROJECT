@@ -8,7 +8,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Harry Potter Regular"),
-    url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
+    url("../font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
 }
 
 body {
@@ -16,8 +16,8 @@ body {
   /* background-size: cover; */
   background-color: chocolate;
   color: rgba(30, 97, 147, 0.9);
-  opacity: 0;
-  transition-delay: 0.5s;
+  /* opacity: 0; */
+  /* transition-delay: 0.5s; */
 }
 nav {
   /* background-color: rgba(250, 250, 250, 0.3); */

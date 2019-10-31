@@ -22,13 +22,11 @@ a {
   font-style: normal;
   font-weight: normal;
   src: local("Harry Potter Regular"),
-    url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
+    url("../font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
 }
 body {
-  background-image: url(/images/homepage/wallpaper-red.jpg);
+  background-image: url(../images/homepage/wallpaper-red.jpg);
   background-size: cover;
-  opacity: 0;
-  transition-delay: 0.5s;
 }
 
 #heading {

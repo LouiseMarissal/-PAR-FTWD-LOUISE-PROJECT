@@ -95,7 +95,7 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   src: local("Harry Potter Regular"),
-    url("/font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
+    url("../font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
 }
 .btn-container {
   padding-top: 140px;
@@ -126,7 +126,7 @@ button:hover {
 /* div with gif background when score is weak */
 .loser {
   background-color: Black;
-  background-image: url(/images/displays-answers/medium-level/voldy-vnr.gif);
+  background-image: url(../images/displays-answers/medium-level/voldy-vnr.gif);
   background-size: cover;
   height: 600px;
   width: 600px;
@@ -147,7 +147,7 @@ button:hover {
   margin: 40px;
 }
 .troll {
-  background-image: url(/images/displays-answers/medium-level/rogue-troll.gif);
+  background-image: url(../images/displays-answers/medium-level/rogue-troll.gif);
   background-size: cover;
   height: 600px;
   width: 600px;
@@ -165,7 +165,7 @@ button:hover {
   margin: 40px;
 }
 .expert {
-  background-image: url(/images/displays-answers/medium-level/dumby-medium.gif);
+  background-image: url(../images/displays-answers/medium-level/dumby-medium.gif);
   background-size: cover;
   height: 600px;
   width: 600px;
