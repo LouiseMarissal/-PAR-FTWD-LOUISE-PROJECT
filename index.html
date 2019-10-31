@@ -15,15 +15,23 @@
       rel="stylesheet"
     />
     <script type="module" src="js/transitions.js"></script>
+    <!-- <script type="text/JavaScript" src="js/audio.js"></script> -->
     <title>Potterhead or Stupid Muggle?</title>
   </head>
   <body>
+    <embed
+      name="HarryPotterThemeSong"
+      src="songs/harry-potter-theme-song.mp3"
+      loop="true"
+      hidden="true"
+      autostart="true"
+    />
     <nav id="nav-bar">
       <ul>
         <li>
           <a
             href="index.html"
-            id="a-nav"
+            class="a-nav"
             style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
             >Home</a
           >
@@ -31,7 +39,7 @@
         <li>
           <a
             href="html/level-index.html"
-            id="a-nav"
+            class="a-nav"
             style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
             >Levels</a
           >
@@ -68,8 +76,10 @@
       </a>
     </div>
 
+    <audio src="songs/harry-potter-theme-song.mp3" controls></audio>
+
     <embed
-      src="/songs/harry-potter-theme-song.mp3"
+      src="songs/harry-potter-theme-song.mp3"
       autostart="true"
       width="0"
       height="0"
