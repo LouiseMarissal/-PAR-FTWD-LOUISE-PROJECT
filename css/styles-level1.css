@@ -16,7 +16,8 @@ body {
   /* background-image: url(/images/); */
   background-size: cover;
   color: rgb(1, 15, 20);
-  background-color: rgb(242, 197, 51);
+  background-color: rgb(240, 185, 4);
+  z-index: 0;
 }
 ul {
   display: flex;
@@ -127,7 +128,7 @@ button:hover {
   position: relative;
   height: 100vh;
   z-index: 2;
-  /* background-color: black; ---------> a régler*/
+  /* background-color: black; */
 }
 /* div with gif background when score is weak */
 .loser {
@@ -142,6 +143,7 @@ button:hover {
   color: rgb(242, 197, 51);
   z-index: 3;
   padding-top: 0;
+  border-radius: 50%;
 }
 .active {
   padding-top: 175px;
@@ -163,6 +165,7 @@ button:hover {
   color: rgb(242, 197, 51);
   z-index: 3;
   padding-top: 0;
+  border-radius: 50%;
 }
 .squib > button {
   background-color: rgba(242, 197, 51, 0.9);
@@ -181,6 +184,7 @@ button:hover {
   color: rgb(242, 197, 51);
   z-index: 3;
   padding-top: 0;
+  border-radius: 50%;
 }
 .expert > button {
   background-color: rgba(242, 197, 51, 0.9);

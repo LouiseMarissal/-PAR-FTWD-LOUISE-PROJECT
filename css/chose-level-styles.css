@@ -12,10 +12,10 @@
 }
 
 body {
-  /* background-image: url(/images/level-page/choose-level.jpg); */
+  /* background-image: url(/images/levels/); */
   /* background-size: cover; */
   background-color: chocolate;
-  color: rgba(30, 97, 147, 0.9);
+  color: rgba(46, 100, 141, 0.9);
   /* opacity: 0; */
   /* transition-delay: 0.5s; */
 }
