@@ -178,7 +178,7 @@
         resultsContainer.classList.add("troll");
         answers = "Not so bad little Troll";
       }
-      if (numCorrect === 8) {
+      if (numCorrect === 10) {
         resultsContainer.classList.add("expert");
         return (answers = "Good job!<br> You're a PotterHead");
       }

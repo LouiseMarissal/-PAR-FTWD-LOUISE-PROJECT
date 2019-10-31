@@ -6,11 +6,12 @@
 }
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px 20px;
 }
 li {
   list-style: none;
+  padding-left: 20px;
 }
 a {
   text-decoration: none;
@@ -72,6 +73,6 @@ button:hover {
 }
 .shake {
   animation: infinite;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-delay: 0.5s;
 }

@@ -42,11 +42,11 @@
         "In the 'Order of the Phoenix' who ordonned to the Dementors to Attacked Harry and Dudley?",
       answers: {
         a: "Cornelius Fudge",
-        b: "Dolores Umbridge",
+        b: "Lucius Malfoy",
         c: "Mafalda Hopkirk",
-        d: "Lucius Malfoy"
+        d: "Dolores Umbridge"
       },
-      correctAnswer: "a",
+      correctAnswer: "d",
       level: "hard"
     },
     {

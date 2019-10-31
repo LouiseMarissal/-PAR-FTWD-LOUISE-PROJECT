@@ -15,63 +15,72 @@
   </head>
 
   <body>
-    <nav id="nav-bar">
-      <ul>
-        <li>
-          <a
-            href="/html/index.html"
-            id="a-nav"
+    <div class="pop-up-container">
+      <div id="pop-up">
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a
+                href="/html/index.html"
+                id="a-nav"
+                style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/html/choose-level/level-index.html"
+                id="a-nav"
+                style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
+                >Levels</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div id="title">
+          <div
             style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
-            >Home</a
           >
-        </li>
-        <li>
-          <a
-            href="/html/choose-level/level-index.html"
-            id="a-nav"
-            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:30px"
-            >Levels</a
+            Time : <span id="timer"></span>
+          </div>
+          <h1
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:70px"
+            class="fadeIn"
           >
-        </li>
-      </ul>
-    </nav>
-    <div id="title">
-      <h1
-        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:70px"
-        class="fadeIn"
-      >
-        PotterHead or Deatheaters ?
-      </h1>
-      <div
-        id="results"
-        class="bounce"
-        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:50px"
-      ></div>
-    </div>
-    <div class="quiz-container">
-      <div class="bg-container">
-        <div id="quiz"></div>
+            PotterHead or Deatheaters ?
+          </h1>
+          <div
+            id="results"
+            class="bounce"
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:50px"
+          ></div>
+        </div>
+        <div class="quiz-container">
+          <div class="bg-container">
+            <div id="quiz"></div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:15px"
+            id="previous"
+          >
+            Previous Question
+          </button>
+          <button
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:15px"
+            id="next"
+          >
+            Next Question
+          </button>
+          <button
+            style="font-family:'Harry Potter Regular';font-weight:normal;font-size:15px"
+            id="submit"
+          >
+            Submit Quiz
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="btn-container">
-      <button
-        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:15px"
-        id="previous"
-      >
-        Previous Question
-      </button>
-      <button
-        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:15px"
-        id="next"
-      >
-        Next Question
-      </button>
-      <button
-        style="font-family:'Harry Potter Regular';font-weight:normal;font-size:15px"
-        id="submit"
-      >
-        Submit Quiz
-      </button>
     </div>
     <embed
       src="/songs/professor-umbridge-song.mp3"
