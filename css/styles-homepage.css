@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
+body {
+  background-image: url(../images/homepage/wallpaper-red.jpg);
+  background-size: cover;
+}
+
 ul {
   display: flex;
   justify-content: flex-start;
@@ -23,10 +28,6 @@ a {
   font-weight: normal;
   src: local("Harry Potter Regular"),
     url("../font/harry-potter-cufonfonts-webfont/HARRP___.woff") format("woff");
-}
-body {
-  background-image: url(../images/homepage/wallpaper-red.jpg);
-  background-size: cover;
 }
 
 #heading {

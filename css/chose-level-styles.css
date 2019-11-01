@@ -63,11 +63,6 @@ li {
 ul {
   display: flex;
 }
-#a-level {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
 button {
   /* background-color: white; */
   border: none;

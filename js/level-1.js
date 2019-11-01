@@ -1,6 +1,7 @@
-// build my Quiz
+// build my Quiz, this quiz is making with google help
 // 10 EASY questions
 (function() {
+  // my datas for the quiz
   const myQuestions = [
     {
       question:
@@ -118,8 +119,9 @@
       level: "easy"
     }
   ];
-
+  // buid the quiz
   function buildQuiz() {
+    // we'll need a place to store the HTML output
     const output = [];
     var letter = [];
     myQuestions.forEach((currentQuestion, questionNumber) => {
@@ -134,7 +136,7 @@
              </label>`
         );
       }
-
+      //
       output.push(
         `<div class="slide">
              <div class="question" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:32px"> ${
@@ -160,12 +162,13 @@
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
+      // revoir la syntaxe
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
-      }
+      } // display different answer according to the results
       if (numCorrect < 5) {
         resultsContainer.classList.add("loser");
         answers = "Stupid Muggle!";
@@ -179,10 +182,10 @@
         resultsContainer.classList.add("expert");
       }
     });
-
+    //create a "pop-up" to display the result
     resultsContainer.innerHTML = `<div class="active bounce" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px">Your Score is <br>${numCorrect} out of ${myQuestions.length} <br>${answers}</div> <button><a href="../html/level-index.html">Go Back</a></button>`;
   }
-
+  //
   function showSlide(n) {
     slides[currentSlide].classList.remove("active-slide");
     slides[n].classList.add("active-slide");
@@ -210,8 +213,9 @@
   function showPreviousSlide() {
     showSlide(currentSlide - 1);
   }
-  //set a timer
-  var sec = 60;
+  //set a timer, show alert at the end of time, maybe should I change with the pop-up
+  // revoi la doc
+  var sec = 20;
   var time = setInterval(myTimer, 1000);
 
   function myTimer() {
@@ -220,9 +224,11 @@
     if (sec == -1) {
       clearInterval(time);
       alert("Time out! You Lose Muggle!");
+      // test ok with div pop-up, change the code ASAP
+      // resultsContainer.innerHTML = `<div class="active bounce" style="font-family:'Harry Potter Regular';font-weight:normal;font-size:42px">Time's up! you Lose stupid muggle !!!!</div> <button><a href="../html/index-level1.html">Retry</a></button>`;
     }
   }
-
+  //create all selector according to the HTML
   const quizContainer = document.querySelector("#quiz");
   const resultsContainer = document.querySelector("#pop-up");
   const submitButton = document.querySelector("#submit");
@@ -234,10 +240,10 @@
   const nextButton = document.querySelector("#next");
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
-
+  // show slide from the 0 index
   showSlide(0);
 
-  // on submit, show results
+  // on click submit, show results
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
