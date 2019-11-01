@@ -215,7 +215,7 @@
   }
   //set a timer, show alert at the end of time, maybe should I change with the pop-up
   // revoi la doc
-  var sec = 20;
+  var sec = 60;
   var time = setInterval(myTimer, 1000);
 
   function myTimer() {
